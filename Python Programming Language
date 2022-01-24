@@ -1,0 +1,249 @@
+Python
+------------------------------------------------------------------------------
+Uses:
+  1. Python 3 for web develeopment
+  2. ML 
+  
+Facts:
+  1. Is High level lanaguage
+  2. Allows OOP and procedural paradigms
+  3. used by google, uber, amazon, Fb, insta etc
+  4. Huge library like:
+    Machine Learning
+    GUI Applications (like Kivy, Tkinter, PyQt etc. )
+    Web frameworks like Django (used by YouTube, Instagram, Dropbox)
+    Image processing (like OpenCV, Pillow)
+    Web scraping (like Scrapy, BeautifulSoup, Selenium)
+    Test frameworks
+    Multimedia
+    Scientific computing
+    Text processing and more
+----------------------------------------------------------------------------------  
+Introduction:
+-------------
+created by Guido Van Rossum in 1991
+Major vesions: Python 2 and Python 3
+Interpretor: Python default---> IDLE for windows(we can use online interpretors also)
+
+#   Single line Comment
+Python 2 print is a keyword so without braces can be used.
+In python 3, print is a fucntion, so use braces to invoke it.
+
+------------------------------------------------------------------------------------
+Advantages and Disadvantages:
+----------------------------
+ADVAN:
+Performs auatomatic memory management.
+Is general purpose  dynamic language to fpcus on readablity.
+Third party modules
+Pandas for analytical and numpy for numeric analysis
+varsality, readablity, etc
+free to use
+user freindly data structures
+High level language
+Dynamically typed data types
+oop
+Portable and iinteractive
+Portable across OS
+--------------
+Applications :
+-------------
+GUI based desktop applications
+Graphic design, image processing applications, Games, and Scientific/ computational Applications
+Web frameworks and applications 
+Enterprise and Business applications 
+Operating Systems 
+Education
+Database Access
+Language Development 
+Prototyping 
+Software Development
+----------
+Google(Components of Google spider and Search Engine) 
+Yahoo(Maps) 
+YouTube 
+Mozilla 
+Dropbox 
+Microsoft 
+Cisco 
+Spotify 
+Quora
+-----------------------------------------------------------------------------------
+
+Download and Install
+----------------------------------------------------------------------------------
+Python 3 === version 3.7.4
+Andrioid version === Pydriod
+----------------------------------------------------------------------------------
+Basics:
+---------------------------------------------------------------------------------
+it is interpreted languagebecoz no coimpile needed.
+{} ---> not used for its scope but indentation is reauired instead
+
+Input function:
+--------------
+Name = Input('enter name: ')
+Print('Hello ', Name)
+
+Selection statements:
+--------------------
+num1 = 34
+if(num1>12):
+    print("Num1 is good")
+elif(num1>35):
+    print("Num2 is not gooooo....")
+else:
+    print("Num2 is great")
+    
+Function:
+---------
+Function uses Def keyword to start.
+
+# Python program to illustrate
+# functions
+def hello():
+    print("hello")
+    print("hello again")
+
+  
+# calling function
+hello()    
+
+Main function:
+-------------
+# Python program to illustrate 
+# function with main
+def getInteger():
+    result = int(input("Enter integer: "))
+    return result
+  
+def Main():
+    print("Started")
+  
+    # calling the getInteger function and 
+    # storing its returned value in the output variable
+    output = getInteger()     
+    print(output)
+  
+# now we are required to tell Python 
+# for 'Main' function existence
+if __name__=="__main__":
+    Main()
+    
+Iteration Loops:
+---------------
+# Python program to illustrate
+# a simple for loop
+  
+for step in range(5):    
+    print(step)
+    
+Modules:
+-------
+# Python program to illustrate
+# math module
+import math
+  
+def Main():
+    num = -85
+  
+    # fabs is used to get the absolute 
+    # value of a decimal
+    num = math.fabs(num) 
+    print(num)
+      
+      
+if __name__=="__main__":
+    Main()
+    
+    
+Data structures:
+---------------
+total 4 : Lists, Set, Dictionary, Tuple
+
+List:
+-----
+Mutable  ---> use append function to add items
+
+-----------------------------------------------------------------------------------------------
+Keywords:
+-----------------------------------------------------------------------------------------------
+Are reserved words by python.  35 in number.
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue',
+'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 
+'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+Get above keyword list:
+----------------
+# Python code to demonstrate working of iskeyword()
+  
+# importing "keyword" for keyword operations
+import keyword
+  
+# printing all keywords at once using "kwlist()"
+print("The list of keywords is : ")
+print(keyword.kwlist)
+
+Definitions:
+-----------
+True  ---> Boolean true
+False ---> Boolean false
+None ----> denotes void or null. It is not similar to 0 or empty container/list.
+            it is an object of datatype:  NoneType.
+            
+print(False == 0)  ---> True
+print(True == 1)   ---> True
+  
+print(True + True + True)  ---> 3
+print(True + False + False) ---> 1
+  
+print(None == 0)  ---> False
+print(None == [])---> False
+
+NoneType. It is not possible to create multiple None objects and can assign them to variables.
+
+and ---> Logical operator. Return the first false value. If not found return last.
+3 and 0 returns 0, 3 and 10 returns 10, 3 and 10 and 2 returns 2
+or ----> Logical operator. Return the first true value. If not found return last. 
+3 and 0 returns 3, 3 and 10 returns 3, 3 and 10 and 2 returns 3, 0 or 0 or 3 or 10 or 0 returns 3 
+not --> inverts logical operator value
+in  ---> used tocheck value in container or loop arcross it.
+is ---> checck object identity. Like if both objects have same memory location.
+
+
+# showing logical operation
+# or (returns True)
+print(True or False)
+  
+# showing logical operation
+# and (returns False)
+print(False and True)
+  
+# showing logical operation
+# not (returns False)
+print(not True)
+  
+# using "in" to check
+if 's' in 'geeksforgeeks':
+    print("s is part of geeksforgeeks")
+else:
+    print("s is not part of geeksforgeeks")
+  
+# using "in" to loop through
+for i in 'geeksforgeeks':
+    print(i, end=" ")  ----> adds space after each letter
+  
+#Carriage return
+print("\r")
+  
+# using is to check object identity
+# string is immutable( cannot be changed once allocated)
+# hence occupy same memory location
+print(' ' is ' ')
+  
+# using is to check object identity
+# dictionary is mutable( can be changed once allocated)
+# hence occupy different memory location
+print({} is {})
+
