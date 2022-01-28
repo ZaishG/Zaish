@@ -254,4 +254,47 @@ else:
     print("Both a and b are equal")
     
 -----------------------------------
+a=5
+b=7
+ 
+# [statement_on_True] if [condition] else [statement_on_false]
+ 
+print(a,"is greater") if (a>b) else print(b,"is Greater")
+------------------------------------------------
+# Program to demonstrate conditional operator, used in olde versions
+#has problem if on_true is false or 0(i.e, a != 0 or false
 
+a, b = 10, 20
+ 
+# If a is less than b, then a is assigned
+# else b is assigned (Note : it doesn't
+# work if a is 0.
+min = a < b and a or b
+ 
+print(min)
+--------------------
+Divisional Operators:
+--------------------
+# A Python program to demonstrate the use of
+#divisonal floor value
+# "//" for integers
+print (5//2)
+print (-5//2)
+--------------------
+Operator Overloading:
+--------------------
+# Python program to show use of
+# + operator for different purposes.
+#same operator overloaded with string and int class
+ 
+print(1 + 2)
+ 
+# concatenate two strings
+print("Geeks"+"For")
+ 
+# Product two numbers
+print(3 * 4)
+ 
+# Repeat the String
+print("Geeks"*4)
+---------------
